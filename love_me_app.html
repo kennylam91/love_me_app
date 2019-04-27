@@ -8,12 +8,22 @@
 <div style="display:block;width:250px; margin-left:auto;margin-right:auto;">
     <h2>DO YOU LOVE ME?</h2>
     <button onclick="yesfunction()" style="margin-left:50px;" type="button">YES</button>
-    <button id="no" onclick = "yesfunction()" onmouseover="nofunction()" style="margin-left:50px;" type="button">NO</button>
+    <button id="no" onclick="yesfunction()" onmouseover="nofunction()" type="button">NO</button>
 
 </div>
 <div id="iloveyou" style="display:none;width:500px; margin-left:auto;margin-right:auto;margin-top:100px;">
-<h1 style="font-size:58px;"> I LOVE YOU,TOO</h1>
+    <h1 style="font-size:58px;"> I LOVE YOU,TOO</h1>
 </div>
 <script src="love_me_app.js"></script>
+<style>
+    button {
+        margin-left: 50px;
+        background-color: lightgreen;
+        color: black;
+    }
+    #no{
+        transition:left 1s, top 1s;
+    }
+</style>
 </body>
 </html>
